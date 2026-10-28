@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conoce el menú de pizzas y productos italianos de nuestra pizzería.">
+  <link rel="icon" href="img/logo.png">
+  <title>Productos | JENO'S PIZZA</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg sticky-top site-navbar">
+    <div class="container">
+      <a class="navbar-brand brand-lockup" href="index.html">
+        <img class="brand-logo" src="img/logo.png" alt="Jeno's Pizza, inicio" height="44">
+        <span class="brand-name">JENO'S PIZZA<small>PIZZERIA</small></span>
+      </a>
+
+      <!-- Botón hamburguesa (visible solo en celular/tablet) -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-tomato" href="contacto.html#formulario">¡Hablemos!</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== ENCABEZADO DE LA PÁGINA ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Il nostro menù</span>
+        <h1>Elige tu <span class="text-tomato">favorita.</span></h1>
+        <p>Recetas llenas de sabor, ingredientes que combinan y opciones para cada antojo.</p>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTOS ===== -->
+    <section class="section-padding products-section">
+      <div class="container">
+
+        <!-- Filtros -->
+        <div class="filter-bar" role="group" aria-label="Filtrar productos">
+          <button class="filter-btn active" type="button" data-filter="todos" aria-pressed="true">Todo el menú</button>
+          <button class="filter-btn" type="button" data-filter="pizzas" aria-pressed="false">Pizzas</button>
+          <button class="filter-btn" type="button" data-filter="pastas" aria-pressed="false">Pastas</button>
+          <button class="filter-btn" type="button" data-filter="acompanamientos" aria-pressed="false">Acompañamientos</button>
+          <button class="filter-btn" type="button" data-filter="bebidas" aria-pressed="false">Bebidas</button>
+        </div>
+
+        <div class="row g-4 product-grid">
+
+          <div class="col-sm-6 col-lg-4 product-item" data-category="pizzas">
+            <article class="product-card h-100">
+              <img src="img/hawaiana.jpg"
+                   alt="Pizza hawaiana" loading="lazy">
+              <div class="product-card-body">
+                <div class="product-title-row">
+                  <h2>Pizza Hawaiana (Mediana)</h2>
+                  <span class="price">$41.900</span>
+                </div>
+                <p>Una receta clásica que combina una generosa base de queso mozzarella con jamón seleccionado y trozos dulces de piña.</p>
+                <a class="btn btn-outline-tomato" href="contacto.html?producto=Margherita#formulario">Consultar producto</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 product-item" data-category="pizzas">
+            <article class="product-card h-100">
+              <img src="img/pepperoni.jpg"
+                   alt="Pizza Pepperoni" loading="lazy">
+              <div class="product-card-body">
+                <div class="product-title-row">
+                  <h2>Pizza Pepperoni (Mediana)</h2>
+                  <span class="price">$41.900</span>
+                </div>
+                <p>Cubierta tradicional repleta de rodajas crujientes y sazonadas de pepperoni americano sobre una capa fundida de mozzarella.</p>
+                <a class="btn btn-outline-tomato" href="contacto.html?producto=Pepperoni#formulario">Consultar producto</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 product-item" data-category="pizzas">
+            <article class="product-card h-100">
+              <img src="img/brownie.jpg"
+                   alt="Pizza brownie" loading="lazy">
+              <div class="product-card-body">
+                <div class="product-title-row">
+                  <h2>Pizza Brownie</h2>
+                  <span class="price">$21.900</span>
+                </div>
+                <p>Postre horneado en forma de pizza individual con Toppings dulces, salsas y chocolate para compartir.</p>
+                <a class="btn btn-outline-tomato" href="contacto.html?producto=La%20Speciale#formulario">Consultar producto</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 product-item" data-category="pastas">
+            <article class="product-card h-100">
+              <img src="img/palitroques.jpg"
+                   alt="Pasta palitroques" loading="lazy">
+              <div class="product-card-body">
+                <div class="product-title-row">
+                  <h2>Palitroques Jeno's</h2>
+                  <span class="price">$14.900</span>
+                </div>
+                <p>Dedos de masa recién horneada sazonados con especias finas e ideales para untar en salsas especiales.</p>
+                <a class="btn btn-outline-tomato" href="contacto.html?producto=Pasta%20al%20Pomodoro#formulario">Consultar producto</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 product-item" data-category="acompanamientos">
+            <article class="product-card h-100">
+              <img src="img/papas.jpg"
+                   alt="Papas crocantes" loading="lazy">
+              <div class="product-card-body">
+                <div class="product-title-row">
+                  <h2>Papas Corrientes</h2>
+                  <span class="price">$10.900</span>
+                </div>
+                <p>Crujientes papas fritas en corte tradicional perfectas para acompañar cualquier combo o plato del menú.</p>
+                <a class="btn btn-outline-tomato" href="contacto.html?producto=Patate%20croccanti#formulario">Consultar producto</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 product-item" data-category="bebidas">
+            <article class="product-card h-100">
+              <img src="img/limonada.jpg"
+                   alt="Bebida refrescante" loading="lazy">
+              <div class="product-card-body">
+                <div class="product-title-row">
+                  <h2>Limonata</h2>
+                  <span class="price">$6.200</span>
+                </div>
+                <p>Refrescante bebida cítrica de limón natural endulzada en su punto justo, ideal para balancear los sabores de tu pizza.</p>
+                <a class="btn btn-outline-tomato" href="contacto.html?producto=Limonata#formulario">Consultar producto</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <!-- ===== VIDEO ===== -->
+        <div class="video-section mt-5">
+          <span class="eyebrow">Dentro de la cocina</span>
+          <h2 class="mb-4">Mira cómo preparamos tus pizzas</h2>
+
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/fyg9zst77dI?si=F3S-U-VQcXf7vacx"
+                    title="Video de Jeno's Pizza: preparación de nuestras pizzas"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="index.html">🍕 JENO'S PIZZA</a>
+      <p>Un pedacito de Italia en cada bocado.</p>
+
+      <nav class="footer-links" aria-label="Enlaces del pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <small>© <span class="current-year"></span> Jeno's Pizza.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Año automático en el footer
+    document.querySelectorAll('.current-year').forEach(function (el) {
+      el.textContent = new Date().getFullYear();
+    });
+
+    // Filtro de productos por categoría
+    var botones = document.querySelectorAll('.filter-btn');
+    var productos = document.querySelectorAll('.product-item');
+
+    botones.forEach(function (boton) {
+      boton.addEventListener('click', function () {
+        var filtro = boton.dataset.filter;
+
+        // Marcar el botón activo
+        botones.forEach(function (b) {
+          var activo = (b === boton);
+          b.classList.toggle('active', activo);
+          b.setAttribute('aria-pressed', activo);
+        });
+
+        // Mostrar solo los productos de esa categoría
+        productos.forEach(function (item) {
+          item.hidden = !(filtro === 'todos' || item.dataset.category === filtro);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
